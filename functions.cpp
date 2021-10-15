@@ -5,19 +5,19 @@
 #include "constants.hpp"
 #include <fstream>
 #include <iostream>
-void WriteFileOutput(int intarray[N][N])
+void WriteFileOutput(int intarray[N_STOLBY][N_STROKI])
 {
-    for(int i = 0; i < N; i++)
+    for(int i = 0; i < N_STROKI; i++)
     {
-        for (int j = 0; j < N; j++)
+        for (int j = 0; j < N_STOLBY; j++)
         {
-            std::cout << intarray[i][j] << " ";
+            std::cout << intarray[j][i] << " ";
         }
         std::cout << std::endl;
     }
 }
 
-int ReadFileInput(int intarray[N][N])
+int ReadFileInput(int intarray[N_STOLBY][N_STROKI])
 {
     std::ifstream in("input.txt");
     if (!in)
@@ -28,9 +28,9 @@ int ReadFileInput(int intarray[N][N])
     else
     {
         std::cout << "File opened!\n";
-        for(int i = 0; !in.eof(); i++)
-            for(int j = 0; j < N; j++)
-               in >> intarray[i][j];
+        for(int i = 0; i < N_STROKI; i++)
+            for(int j = 0; j < N_STOLBY; j++)
+               in >> intarray[j][i];
 
         return 1;
 

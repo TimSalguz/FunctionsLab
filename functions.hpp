@@ -6,6 +6,8 @@
 #define FUNCTIONSLAB_FUNCTIONS_HPP
 
 #endif //FUNCTIONSLAB_FUNCTIONS_HPP
-const int N = 3;
-int ReadFileInput(int intarray[N][N]);
-void WriteFileOutput(int intarray[N][N]);
+const int N_STROKI = 4;
+const int N_STOLBY = 5;
+
+int ReadFileInput(int intarray[N_STOLBY][N_STROKI]);
+void WriteFileOutput(int intarray[N_STOLBY][N_STROKI]);
