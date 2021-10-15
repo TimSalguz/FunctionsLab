@@ -1,0 +1,8 @@
+#pragma once
+// Created by TimSalguz on 15.10.2021.
+//
+
+#ifndef FUNCTIONSLAB_CONSTANTS_HPP
+#define FUNCTIONSLAB_CONSTANTS_HPP
+
+#endif //FUNCTIONSLAB_CONSTANTS_HPP
