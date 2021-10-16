@@ -40,10 +40,9 @@ int main() {
             {
                 ts::SortStrok(intarray);
                 ts::WriteFileOutput(intarray);
-                return 1000;//Продолжать работу, проверить, простое ли
+                return 0;//Продолжать работу, проверить, простое ли
             }
         }
-        std::cout << "Finish" << std::endl;
-        return 0;
+
     }
 }
