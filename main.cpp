@@ -39,7 +39,18 @@ int main() {
             }
             else
             {
-
+                for (int i = 0; i < N_STROKI; ++i)
+                {
+                    for (int j = 0; j < N_STOLBY-1; ++j) {
+                        for (int k = j+1; k < N_STOLBY; ++k) {
+                            if(intarray[j][i] >= intarray[k][i])
+                            {
+                                std::swap(intarray[j][i], intarray[k][i]);
+                            }
+                        }
+                    }
+                }
+                ts::WriteFileOutput(intarray);
                 return 1000;//Продолжать работу, проверить, простое ли
             }
         }
