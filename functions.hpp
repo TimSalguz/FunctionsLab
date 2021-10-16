@@ -19,4 +19,6 @@ namespace ts
     void SovpadenieDvuhStolbcov(int intarray[N_STOLBY][N_STROKI], bool &stolbySovpadayut);
 
     bool ContainsPrime(int intarray[N_STOLBY][N_STROKI]);
+
+    void SortStrok(int intarray[N_STOLBY][N_STROKI]);
 }

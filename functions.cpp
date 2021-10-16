@@ -8,6 +8,22 @@
 
 namespace ts
 {
+
+    void SortStrok(int intarray[N_STOLBY][N_STROKI])
+    {
+        for (int i = 0; i < N_STROKI; ++i)
+        {
+            for (int j = 0; j < N_STOLBY-1; ++j) {
+                for (int k = j+1; k < N_STOLBY; ++k) {
+                    if(intarray[j][i] >= intarray[k][i])
+                    {
+                        std::swap(intarray[j][i], intarray[k][i]);
+                    }
+                }
+            }
+        }
+    }
+
     bool ContainsPrime(int intarray[N_STOLBY][N_STROKI])
     {
         for (int i = 0; i < N_STOLBY; ++i)
