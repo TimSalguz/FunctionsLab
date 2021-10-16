@@ -2,7 +2,6 @@
 // Created by TimSalguz on 15.10.2021.
 //
 #include "functions.hpp"
-#include "constants.hpp"
 #include <fstream>
 #include <iostream>
 
